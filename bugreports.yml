@@ -99,5 +99,15 @@
     Меняются доступные чекбоксы колонки фильтрации по бренду
     Для перехода на предыдущую страницу необходимо нажать два раза
     Скриншот с ошибкой: assets/inStock_enabled.png
-
-
+    
+- summary: |
+  Наличие кнопки "Previous" на первой странице магазина
+  environment: |
+    Mozilla Firefox 107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 10 Pro 22H2
+  steps-to-reproduce: |
+    1. Перейти на главную страницу магазина
+  expected-result: |
+    Отсутствие кнопки "Previous"
+  actual-result: |
+    Скриншот с ошибкой: assets/1stPage_previous.png

@@ -1,0 +1,13 @@
+---
+name: Ilona Maskova # Ваше имя
+job: QA Engineer
+level: junior
+email: meowry@hexlet.io
+description: |
+  Описание в свободной форме
+skills:
+  - Функциональное тестирование
+  - Написание багрепортов
+  - Linux
+  - Слепая печать
+  - Английский язык C1

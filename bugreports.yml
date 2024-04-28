@@ -1,0 +1,103 @@
+---
+- summary: |
+    Не отображается флаг при выборе языка (English)
+  environment: |
+    Mozilla Firefox 107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 10 Pro 22H2
+  steps-to-reproduce: |
+    1. Нажать на "Language"
+  expected-result: |
+    При выборе языка отображаются картинки с соответствующими флагами
+  actual-result: |
+    Не отображается флаг English-версии
+    Скриншот с ошибкой: assets/ENGflag_none.png
+
+- summary: |
+    Не функционируетусская русская локализация в описании товара
+  environment: |
+    Mozilla Firefox 107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 10 Pro 22H2
+  steps-to-reproduce: |
+    1. Нажать на любой товар из каталога
+  expected-result: |
+    Описание товара на русском языке
+  actual-result: |
+    Описание товара на англ. языке
+    Скриншот с ошибкой: assets/RU_description.png
+
+- summary: |
+    Не удаляется товар из корзины после оформления заказа
+  environment: |
+    Mozilla Firefox 107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 10 Pro 22H2
+  steps-to-reproduce: |
+    1. Добавить товар(-ы) в корзину
+    2. Перейти в корзину
+    3. Нажать на "Checkout"
+    4. Нажать на "Close"
+  expected-result: |
+    Товары удалены из корзины
+  actual-result: |
+    Товары остаются в корзине после оформления заказа
+    Скриншот с ошибкой: assets/cart_payed.png
+
+- summary: |
+    Верстка не адаптируется под размеры экрана
+  environment: |
+    Mozilla/5.0 
+    iPhone; CPU iPhone OS 14_6 like Mac OS X
+    AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1
+    428 x 926
+  steps-to-reproduce: |
+    1. Открыть сайт с мобильного устройства
+  expected-result: |
+    Элементы интерфейс доступны для взаимодействия
+    Текст, изображения читаемы и не обрезаны
+  actual-result: |
+    Элементы выходят за границы блоков и перекрывают контент
+    Скриншот с ошибкой: assets/mobile.png
+
+- summary: |
+    Поле ценового фильтра допускает ввод символов, кроме чисел
+  environment: |
+    Mozilla Firefox 107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 10 Pro 22H2
+  steps-to-reproduce: |
+    1. Ввести в поле фильтра по цене символы
+  expected-result: |
+    Для ввода доступны только цифры
+  actual-result: |
+    Для ввода доступны все символы
+    Скриншот с ошибкой: assets/price_symbols.png
+
+- summary: |
+    Не отображаются товары, если убрать галочку с "in Stock"
+  environment: |
+    Mozilla Firefox 107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 10 Pro 22H2
+  steps-to-reproduce: |
+    1. На главном экране нажать на чекбокс "in Stock"
+  expected-result: |
+    Отображаются товары, не находящиеся в наличии
+  actual-result: |
+    Не отображаются товары, не находящиеся в наличии
+    Скриншот с ошибкой: assets/inStock_enabled.png
+
+- summary: |
+  Двойное нажатие "Previous" для перехода к предыдущей странице с активными фильтрами
+  environment: |
+    Mozilla Firefox 107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 10 Pro 22H2
+  steps-to-reproduce: |
+    1. Проставить ценовой фильтр
+    2. Нижимать "Next" до достижения последней страницы
+    3. Нажать "Previous"
+  expected-result: |
+    Отображается предыдущая страница
+  actual-result: |
+    Не отображается следующая страница
+    Меняются доступные чекбоксы колонки фильтрации по бренду
+    Для перехода на предыдущую страницу необходимо нажать два раза
+    Скриншот с ошибкой: assets/inStock_enabled.png
+
+

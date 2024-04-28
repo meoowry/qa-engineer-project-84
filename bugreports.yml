@@ -111,3 +111,15 @@
     Отсутствие кнопки "Previous"
   actual-result: |
     Скриншот с ошибкой: assets/1stPage_previous.png
+
+    - summary: |
+  Наличие кнопки "Next" на последней странице магазина
+  environment: |
+    Mozilla Firefox 107.0.5304.121 (Официальная сборка) (64 бит)
+    ОС Windows 10 Pro 22H2
+  steps-to-reproduce: |
+    1. Нижимать "Next" до достижения последней страницы
+  expected-result: |
+    Отсутствие кнопки "Next"
+  actual-result: |
+    Скриншот с ошибкой: assets/lastPage_next.png

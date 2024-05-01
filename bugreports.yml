@@ -90,7 +90,7 @@
     ОС Windows 10 Pro 22H2
   steps-to-reproduce: |
     1. Проставить ценовой фильтр
-    2. Нижимать "Next" до достижения последней страницы
+    2. Нажимать "Next" до достижения последней страницы
     3. Нажать "Previous"
   expected-result: |
     Отображается предыдущая страница
@@ -101,19 +101,20 @@
     Скриншот с ошибкой: assets/inStock_enabled.png
 
 - summary: |
-  Наличие кнопки "Next" на последней странице магазина
+    Наличие кнопки "Next" на последней странице магазина
   environment: |
     Mozilla Firefox 107.0.5304.121 (Официальная сборка) (64 бит)
     ОС Windows 10 Pro 22H2
   steps-to-reproduce: |
-    1. Нижимать "Next" до достижения последней страницы
+    1. Нажимать "Next" до достижения последней страницы
   expected-result: |
     Отсутствие кнопки "Next"
   actual-result: |
+    Наличие кнопки "Next"
     Скриншот с ошибкой: assets/lastPage_next.png
 
 - summary: |
-  Наличие кнопки "Previous" на первой странице магазина
+    Наличие кнопки "Previous" на первой странице магазина
   environment: |
     Mozilla Firefox 107.0.5304.121 (Официальная сборка) (64 бит)
     ОС Windows 10 Pro 22H2
@@ -122,5 +123,6 @@
   expected-result: |
     Отсутствие кнопки "Previous"
   actual-result: |
+    Наличие кнопки ""Previous"
     Скриншот с ошибкой: assets/1stPage_previous.png
     

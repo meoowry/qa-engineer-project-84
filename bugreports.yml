@@ -112,7 +112,7 @@
   actual-result: |
     Скриншот с ошибкой: assets/1stPage_previous.png
 
-    - summary: |
+- summary: |
   Наличие кнопки "Next" на последней странице магазина
   environment: |
     Mozilla Firefox 107.0.5304.121 (Официальная сборка) (64 бит)

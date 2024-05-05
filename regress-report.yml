@@ -1,5 +1,4 @@
 ---
-test-cases:
 - summary: |
     Проверка добавления товара в корзину
   status: pass
@@ -13,7 +12,7 @@ test-cases:
   status: pass
 
 - summary: |
-    Проверка удаления товара из корзины после оформления заказа
+    Проверка оформления заказа
   status: fail
 
 - summary: |
@@ -26,7 +25,7 @@ test-cases:
 
 - summary: |
     Проверка очистки коризны от товаров
-  status: fail
+  status: pass
 
 - summary: |
     Проверка возврата в каталог товаров из корзины
@@ -45,6 +44,14 @@ test-cases:
   status: pass
 
 - summary: |
+    Проверка переключения страниц каталога с фильтрацией
+  status: pass
+
+- summary: |
+    Проверка перехода на карточку товара из каталога
+  status: pass
+
+- summary: |
     Проверка поиска товара через строку поиска
   status: pass
 
@@ -53,49 +60,34 @@ test-cases:
   status: pass
 
 - summary: |
-    Проверка фильтрации товаров по бренду
-  status: fail
+    Проверка одновременной работы всех доступных фильтров
+  status: pass
 
 - summary: |
-    Проверка одновременной работы всех доступных фильтров
-  status: fail
+    Проверка фильтрации товаров по бренду
+  status: pass
 
 - summary: |
     Проверка фильтрации товаров по цене
-  status: pass  
+  status: pass
 
 - summary: |
     Проверка наличия названия в карточке товара
-  status: pass  
+  status: pass
 
 - summary: |
     Проверка наличия рейтинга в карточке товара
-  status: pass  
+  status: pass
 
 - summary: |
     Проверка наличия цены в карточке товара
-  status: pass  
+  status: pass
 
 - summary: |
-    Проверка адаптивности верстки сайта на мобильном устройстве
+    Проверка мобильной версии сайта
   status: pass
   
 bugreports:
-  - summary: |
-      Не функционирует "Clear cart"
-    environment: |
-      Mozilla Firefox 107.0.5304.121 (Официальная сборка) (64 бит)
-      ОС Windows 10 Pro 22H2
-    steps-to-reproduce: |
-      1. Добавить товар(-ы) в корзину
-      2. Нажать "Clear cart"
-      3. Нажать "Store"
-    expected-result: |
-      Пустая корзина
-    actual-result: |
-      Корзина не очистилась
-      Удаленные ранее товары отображаются в корзине
-
   - summary: |
       Неточный поиск по ключевому слову
     environment: |

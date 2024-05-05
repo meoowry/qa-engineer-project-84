@@ -108,6 +108,6 @@
   expected-result: |
     Отсутствие кнопки "Previous"
   actual-result: |
-    Наличие кнопки ""Previous"
+    Наличие кнопки "Previous"
     Скриншот с ошибкой: assets/1stPage_previous.png
     

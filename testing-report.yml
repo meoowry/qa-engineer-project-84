@@ -12,7 +12,7 @@
   status: pass
 
 - summary: |
-    Проверка удаления товара из корзины после оформления заказа
+    Проверка оформления заказа
   status: fail
 
 - summary: |
@@ -44,6 +44,14 @@
   status: pass
 
 - summary: |
+    Проверка переключения страниц каталога с фильтрацией
+  status: pass
+
+- summary: |
+    Проверка перехода на карточку товара из каталога
+  status: pass
+
+- summary: |
     Проверка поиска товара через строку поиска
   status: pass
 
@@ -52,29 +60,29 @@
   status: pass
 
 - summary: |
-    Проверка фильтрации товаров по бренду
-  status: pass
-
-- summary: |
     Проверка одновременной работы всех доступных фильтров
   status: pass
 
 - summary: |
+    Проверка фильтрации товаров по бренду
+  status: pass
+
+- summary: |
     Проверка фильтрации товаров по цене
-  status: pass  
+  status: pass
 
 - summary: |
     Проверка наличия названия в карточке товара
-  status: pass  
+  status: pass
 
 - summary: |
     Проверка наличия рейтинга в карточке товара
-  status: pass  
+  status: pass
 
 - summary: |
     Проверка наличия цены в карточке товара
-  status: pass  
+  status: pass
 
 - summary: |
-    Проверка адаптивности верстки сайта на мобильном устройстве
-  status: fail 
+    Проверка мобильной версии сайта
+  status: fail
